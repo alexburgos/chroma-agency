@@ -1,0 +1,54 @@
+.sectionContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.artistGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.artistItem {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .artistGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .artistItem {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .artistItem {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .artistItem {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
